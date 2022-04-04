@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Test" parallel="none">
+    <parameter name="browser" value="firefox"></parameter>
+    <test name="Login Firefox">
+        <groups>
+            <run>
+                <include name="Positive"></include>
+                <include name="Negative"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="placelab.tests.SmokeTest"></class>
+        </classes>
+    </test>
+</suite>
